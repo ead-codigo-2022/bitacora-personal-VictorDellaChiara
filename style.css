@@ -101,26 +101,26 @@ form .form-control {
 
 /* HeaderPrincipal */
 #mainheader {
-	background: radial-gradient(at 10% 10px, #696867, #fff, #fff);
-	height: 100vh;
+	background: radial-gradient(at 10% 10px, #010688ad,#a4a4bb, #fff);
+	height: 120vh;
 }
 
 /* Navbar */
 #navbar {
-	color: #fff;
+	color: rgb(18, 20, 122);
 	overflow: auto;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 25px;
+	padding-bottom: 25px;
 }
 
 #navbar a {
-	color: #25197e;
+	color:#000000;
 }
 
 #navbar .logo {
 	float: left;
 	padding-top: 16px;
-	font-size: 25px;
+	font-size: 35px;
 }
 
 #navbar ul {
@@ -129,13 +129,13 @@ form .form-control {
 }
 
 #navbar ul li {
-	float: left;
+	float:left;
 }
 
 #navbar ul li a {
 	display: block;
 	padding: 20px;
-	text-align: center;
+	text-align:center;
 }
 
 #navbar ul li a:hover {
@@ -157,27 +157,27 @@ form .form-control {
 	padding-bottom: 15px;
 }
 
-/* Mis Clases */
-#Mis Clases {
+/* Mis Talleres*/
+#Mis-Clases {
 	padding: 80px 0;
 	text-align: center;
 }
 
-#Mis Clases p {
+#Mis-talleres p {
 	width: 500px;
 	margin: 0 auto;
 	padding-top: 10px;
 	padding-bottom: 50px;
 }
 
-.Mis Clases-row {
-	display: flex;
+.Mis-talleres-row {
+	display:flex;
 }
 
-.Mis Clases-row img {
+.Mis-talleres-row img {
 	width: 100%;
 	padding: 10px;
-	border-radius: 20px;
+	border-radius: 30px;
 }
 
 /* Sobre mi*/
@@ -243,5 +243,103 @@ form .form-control {
 #mainfooter {
 	text-align: center;
 	padding: 30px;
+}
+
+/*galeria*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Mis-talleres{
+    font-family: 'open sans';
+}
+
+.Mis-talleres h2{
+    text-align:center;
+    margin:20px 0 20px 0;
+    font-weight: 300;
+}
+
+.linea{
+    border-top: 5px solid #000000;
+    margin-bottom: 40px;
+}
+
+.contenedor-imagenes{
+    display:flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius:3px;
+}
+
+.contenedor-imagenes .imagen{
+    width: 32%;
+    position: relative;
+    height:250px;
+    margin-bottom:5px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)
+}
+.imagen img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background:rgba(255, 255, 255, 0.453) ;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease;
+}
+
+.overlay h2{
+    color:#101179;
+    font-weight: 300;
+    font-size:30px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.imagen:hover .overlay{
+    height:100%;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1000px){
+    .contenedor-imagenes{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:700px){
+    .contenedor-imagenes{
+        width: 90%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:450px){
+    h1{
+        font-size:22px;
+    }
+    .contenedor-imagenes{
+        width: 98%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 80%;
+    }
 }
 
