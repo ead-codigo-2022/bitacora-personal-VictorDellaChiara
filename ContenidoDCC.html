@@ -23,8 +23,8 @@
                        
 						
 					    <li><a href="#about">Sobre mi</a></li>
-                        <li><a href="#Mis Clases">Clases DCC2022</a></li>
-						<li><a href="#talleres">Talleres Cursados</a></li>
+                        <li><a href="#Clases-ddc">Clases DCC2022</a></li>
+						<li><a href="#Mis-talleres">Talleres Cursados</a></li>
                         <li><a href="#contact">Contacto</a></li>
 						
                         
@@ -318,35 +318,486 @@ Todo es caja. Esta es una manera de pensar en como diagramar nuestras paginas we
 
     <p>
         <h3>Diagramación</h3>
+    <br>
+    <strong>Objetivos de la clase</strong>
+<br>
+    <ul>
+        <li>Analizar y construir HTML a conveniencia</li>
+        <li>Entender tipos de display</li>
+        <li>Aprender a utilizar grillas CSS</li>
+        <li>Aprender de media queries</li>
+    </ul>
+
+    <br>
+<h3>Caracteristicas de CSS grid</h3>
+<br>
+<ul>
+<li>Diagramación en 2 dimensiones</li> 
+<li>Permite definir una estructura de diagramación independiente del orden en que se encuentra el contenido</li> 
+<li>En combinación con @media-queries, permite estructuras flexibles dependientes de las características del cliente (escritorio/móvil)</li> 
+<li>Permite solapar áreas</li> 
+
+</ul>
+
+<h3>Vocabulario fundamental</h3>
+<p>Contenedor de grilla: elemento exterior, padre directo de los elementos de grilla.</p>
+<br>
+<p>Elementos de grilla: descendientes directos del contenedor de grilla.</p>
+<br>
+<h3>-Unidad “fr”-</h3>
+<br>
+
+<p>Representa una fracción del espacio restante en el contenedor de la grilla
+</p>
+<br>
+<h3>Referencias para el uso de grillas</h3>
+<br>
+<a href="https://css-tricks.com/snippets/css/complete-guide-grid/
+">CSS guia grid</a>
+<br>
+<a href="https://learncssgrid.com/
+">Learn Grid</a>
+<br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout">Mozilla Grid CSS</a>
+<br>
+<a href="https://www.w3.org/TR/css-grid-1/">W3 Css grid</a>
+
+<p>
+<h3>Flexbox</h3>
+<br>
+<p>Entrega a un contenedor la habilidad para alterar el ancho o alto, y espaciados de sus elementos para ajustarse lo mejor posible al espacio disponible.
+</p>
+<br>
+<p>Un contenedor flexible expande sus elementos para rellenar el espacio libre, o los comprime para evitar que rebasen el área prevista.</p>
+    <br>
+<p>Los contenedores flexibles funcionan en un eje, horizontal o vertical</p>
+<br>
+</p>
+<br>
+
+<p> </h3>
+    <ul>
     
+    <li><cite> Contenedor flexible</cite>: Elemento con propiedad display: flex;</li>
+    <li><cite>Elementos flexibles</cite>: Descendientes directos de un contenedor flexible</li>
+    <li><cite>Eje principal</cite>: Sobre el cual se suceden los elementos flexibles</li>
+    <li><cite>Eje transversal</cite>: Perpendicular al eje principal</li>
+    <li><cite> Líneas</cite> : Los elementos flexibles pueden quedar contenidos en una línea o utilizar varias según su ancho</li>
     
-    
-    
-    </p>
+</ul>
+</p>
+</p>
 
 
 
 <br>
 <h2>Sesion 6</h2>
-<p></p>
+<br>
+<h3>Media queries</h3>
+<br>
+<p>Las media queries o consultas de medios son una forma de aplicar estilos en función del tipo de dispositivo o de aspectos específicos.
+</p>
+<br>
+<p>
+/body {
+    background-color: #fff;
+  <br>
+}
+<br>
+  /* Mínimo ancho de pantalla de 768px */
+  <br>
+  @media (min-width: 768px) {
+    <br>
+    body {
+        <br>
+      background-color: purple;
+      <br>
+    }
+    <br>
+  }
+  <br>
+  /* Vista previa de impresión e impresos */
+  <br>
+  @media print {
+    <br>
+    .menu {
+        <br>
+      display: none;
+      <br>
+    }
+    <br>
+  }/
+  </p>
+<br>
+
+<h3>Referencias Media Queries</h3>
+<br>
+<p>Buena documentación, con foco en reflexiones de uso:
+   <a href="https://css-tricks.com/a-complete-guide-to-css-media-queries/">Css Media Queries</a> 
+<br>
+
+Versión en inglés está más completa que en español
+ <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
+">Using media queries</a> 
+<br>
 
 
 
 <br>
 <h2>Sesion 7</h2>
-<p></p>
+<br>
+<br>
+<h3>Sistemas de diseño y frameworks CSS</h3>
+<br>
+<br>
+<h3>IBM Design Language</h3>
+<a href="https://www.ibm.com/design/language/">IBM Design Languaje</a>
+<br>
+<br>
+<h3>Material Design</h3>
+<a href="https://material.io/design">Material Design</a>
+<br>
+<br>
+<h3>gel.westpacgroup</h3>
+<a href="https://gel.westpacgroup.com.au/">gel.westpacgroup</a>
+<br>
+<br>
+<h3>Bootstrap</h3>
+<a href="https://getbootstrap.com/">Codigos Bootstrap</a>
+<br>
+<br>
+
+<h3>Ventajas</h3>
+<br>
+<ul>
+<li>Permiten avanzar rápido en la implementación</li>
+<li>Aseguran compatibilidad en diversos navegadores</li>
+<li>Trabajan con buenas prácticas de código</li>
+<li>Son modulares, permiten utilizar ciertos aspectos y extender sus estilos</li>
+</ul>
+<br>
+
+<h3>Desventajas</h3>
+
+<ul>
+    <li>Pueden definir estilos innecesarios para nuestro proyecto</li>
+    <li>Poco control de lo que sucede en la interfaz</li>
+    <li>Entregan una visión de diseño propia, que pueden limitar nuestra creatividad </li>
+
+</ul>
+<br>
+
+<h3>Algunos tipos de frameworks</h3>
+<br>
+<ul>
+    <li>Frameworks de base
+       <a href="http://necolas.github.io/normalize.css/">Normalize.css → </a> </li>
+    <li>Livianos
+       <a href="https://purecss.io/"> Pure.css → </a></li>
+    <li>Propósito general
+      <a href="https://getbootstrap.com/"> Bootstrap →</a>  </li>
+    <li>Especializado
+      <a href=" https://edwardtufte.github.io/tufte-css/"> Tufte CSS →</a> </li>
+    <li>Utilitario
+       <a href="https://tailwindcss.com/"> Tailwind →</a> </li>
+</ul>
+<br>
+
+<h3>¿Cómo escoger un framework?</h3>
+<br>
+<ul>
+    <li>Comunidad</li>
+    <li>Tamaño/cantidad de características</li>
+    <li>Grilla</li>
+    <li>Convenciones de nombres</li>
+    <li>Calidad de proyecto como dependencia</li>
+</ul>
+<br>
+
+<h3>Componentes [↗️]</h3>
+<br>
+
+<p>-Permiten integrar diversos patrones de diseño: soluciones reutilizables para problemas de diseño.
+    <br>
+    -Son modulares: se pueden integrar de forma selectiva.
+    <br>
+    -Son complementarios: se pueden combinar para construir patrones más complejos.
+    <br>
+   -Son extensibles: se pueden modificar según criterios estéticos.
+    <br>
+    </p>
 
 
+
+
+    <br>
+<h2>Sesion 8</h2>
+<br>
+<br>
+<h3>Uso de imágenes</h3>
+<br>
+<p><strong> Formatos comunes para web</strong>
+<br>
+jpg  → Imagen de trama, para fotografías
+<br>
+png  → Imagen de trama, para colores uniformes
+<br>
+gif  → Intercambio de imágenes, sólo 256 colores 
+<br>
+svg  → Imagen vectorial escalable, código
+<br>
+webp → Imagen de trama, mejor performance que JPG
+<br>
+<br>
+<h3>Optimización de imágenes</h3>
+<p>
+    -Escoger el formato de imagen correcto.
+    <br>
+    -Utilizar imágenes en un tamaño similar al que será mostrará en pantalla.
+    <br>
+    -Comprimir imágenes https://compressor.io/.
+    <br>
+    -Preferir webp en vez de jpg.
+    </p>
+    
+<h3>Imágenes adaptables</h3>
+<p>Entregar un archivo de imagen diferente dependiendo de características del dispositivo, utilizando los atributos srcset y sizes
+</p>
+
+<p><strong> Se entrega una imagen distinta dependiendo del ancho de pantalla:</strong>
+
+
+    img srcset="elva-fairy-320w.jpg 320w,
+    <br>
+                 elva-fairy-480w.jpg 480w,
+                 <br>
+                 elva-fairy-800w.jpg 800w"
+                 <br>
+         sizes="(max-width: 320px) 280px,
+         <br>
+                (max-width: 480px) 440px,
+                <br>
+                800px"
+                <br>
+         src="elva-fairy-800w.jpg" alt="Elva dressed as a fairy">
+         <br>
+    
+    <br>
+   <strong> Se entrega una imagen distinta dependiendo del ancho de pantalla:</strong>
+    <br>
+    <br>
+    img srcset="elva-fairy-320w.jpg,
+    <br>
+                 elva-fairy-480w.jpg 1.5x,
+                 <br>
+                 elva-fairy-640w.jpg 2x"
+                 <br>
+         src="elva-fairy-640w.jpg" alt="Elva dressed as a fairy">
+         <br>
+    </p>
+<br>
+    <h3>PPI ~ PPP
+        Pixeles por pulgada</h3>
+
+        <p>Densidad de pixeles de una imagen, que relaciona el número total de pixeles de una pantalla con su tamaño en pulgadas
+        </p>
+        <br>
+
+        <h3>Accesibilidad</h3>
+<br>
+        <strong>Discapacidades:</strong>
+      
+        <ul>
+         <li>Auditiva</li>
+         <li>Cognitiva</li>
+         <li>Neurológica</li>
+         <li>Física</li>
+         <li>Habla</li>
+         <li>Visual</li>
+    </ul>
+    <br>
+   
+    <strong>Situaciones:</strong>
+
+    <ul>
+        <li>Distintos dispositivos de entrada</li>
+        <li>Adultos mayores</li>
+        <li>Discapacidades temporales</li>
+        <li>Limitaciones situacionales</li>
+        <li>Características técnicas</li>
+    </ul>
+    <br>
+
+    <h3>¿Porqué es importante la accesibilidad?</h3>
+
+    <p>-Acceso a la información como derecho humano
+        <br>
+        -Igualdad de acceso e igualdad de oportunidades para personas con distintas capacidades
+        <br>
+        -Inclusión social: adultos mayores, población en áreas rurales, en países en vías de desarrollo...
+        <br>
+        -Puede ser un requerimiento legal en ciertos contextos
+        <br>
+        -Razones de negocio: abarcar un mayor mercado, cumplimiento de responsabilidad pública y políticas de inclusión
+</p>
+<br>
+<h3><cite>Principios de accesibilidad</cite></h3>
+
+<p>
+   <strong> Perceptible</strong>
+La información y los componentes de la interfaz de usuario deben ser presentados a los usuarios de modo que ellos puedan percibirlos.
+<br>
+<strong> Operable</strong>
+Los componentes de la interfaz de usuario y la navegación deben ser operables.
+<br>
+<strong> Comprensible</strong>
+La información y el manejo de la interfaz de usuario deben ser comprensibles.
+<br>
+<strong>Robusto</strong>
+El contenido debe ser suficientemente robusto como para ser interpretado de forma fiable por una amplia variedad de aplicaciones de usuario, incluyendo las ayudas técnicas.
+
+</p>
 
 <br>
-<h2>Sesion 8</h2>
-<p></p>
+<h3><strong>SEO</strong>
+    <cite>Search Engine Optimization </cite>
+    (optimización para motores de búsqueda)
+    </h3>
+<br>
+
+<p>Rastreo→→→→→→Indexacion→→→→→→→Ranking</p>
+<br>
+
+<h3>-Metadatos-
+</h3>
+<br>
+<p>Permiten al buscador tener una perspectiva general del contenido de la página y al autor del contenido de posicionar sus palabras claves
+</p>
+
+<p>
+    <br>
+    Técnicamente no tiene limitación, pero se recomienda que tenga como máximo 70 a 75 caracteres ya que sobre esa cantidad el buscador la corta automáticamente.
+    <br>
+    Meta description
+    <br>
+    Se recomienda que tenga como máximo 160 caracteres; se inserta en la cabecera del documento.
+    <br>
+    meta name="description" content="Descripción del contenido de la página">
+    <br>
+    
+    La etiqueta meta “keywords” está obsoleta y no se debe utilizar
+    </p>
+
+<br>
+    <h3>-Atributo “alt” 
+        en imágenes-</h3>
+        <br>
+        <p>El atributo “alt” especifica un texto alternativo para una imagen. Es fundamental para la accesibilidad de personas ciegas, pero además mejora la indexación de los contenidos de una página al otorgar contexto a las imágenes utilizadas.
+            <br>
+            img src=”foto.jpg” alt=”Domos el LLano (Putaendo)”
+            
+        </p>
+<br>
+<h3>-Sitemaps.xml-
+</h3>
+<br>
+<p>Los sitemaps son archivos en los que se proporciona información sobre las páginas, los vídeos y otros archivos de tu sitio, así como sobre las relaciones que hay entre ellos.
+</p>
+<br>
+<h3>-URL
+    Canónica-
+    </h3>
+    <br>
+    <p>Un contenido puede ser accesible a través de varias URLs, pero sólo una es la “URL canónica”.
+        <br>
+        Siempre es una URL absoluta.
+        <br>
+        La definición de una URL canónica evita el problema del contenido duplicado.
+        <br>
+        Se define mediante un metadato en la sección <head> del documento HTML.
+            <br>
+        link rel="canonical" href="https://www.ead.pucv.cl/">
+        </p>
+<br>
+<h3>-Otros factores relevantes para posicionamiento-</h3>
+<br>
+<p>
+    <strong> Optimización para móviles</strong>
+La usabilidad del sitio en un dispositivo móvil influye positivamente para su posicionamiento. Google está migrando a indexación “mobile-first” en la mayoría de los sitios.
+<br>
+<strong>Performance</strong>
+<br>
+La velocidad de carga, tanto en móviles como en escritorio, influye potentemente en el posicionamiento de un sitio.
+<br>
+<strong>Conexión sobre HTTPS</strong>
+<br>
+El funcionamiento sobre conexiones seguras se considera como una señal para el posicionamiento.
+<br>
+<strong>Datos estructurados</strong>
+<br>
+La presencia de microdatos y microformatos permiten una mejor indexación de los contenidos de un sitio
+<br>
+</p>
+</p>
+
 
 
 
 <br>
 <h2>Sesion 9</h2>
-<p></p>
+<br>
+<h3>Avanzar en los proyectos grupales</h3>
+<p>Seguir metodología de diseño centrado en el usuario.
+    <br>
+    Arquitectura de contenidos: inventario + jerarquización.
+    <br>
+    Wireframes: idea de cómo disponer la info.
+    <br>
+    Diseño: propuesta visual.
+    <br>
+    Implementar.
+
+    </p>
+<br>
+    <h3>Apuntes generales</h3>
+    <br>
+    <p>-Corregir vínculos de archivos internos.
+        <br>
+        .- CSS que no se cargan.
+        <br>
+        -Archivos HTML mal vinculados.
+        <br>
+        Links dentro de una misma página que no funcionan.
+        <br>
+        
+        
+       <strong> Seguir recomendaciones de nombres de carpetas y archivos:</strong>
+       <br>
+        -Minúsculas, palabras separadas por guión
+        <br>
+        -Clases/index.html
+        <br>
+        clases.html
+        <br>
+        ejercicios/color.html
+        <br>
+        sobre-mi.html
+        <br>
+       <strong> Avanzar con contenidos</strong>
+       <br>
+-Notas de clases.
+<br>
+-Hablar/contar de cada uno.
+<br>
+-No debe haber contenido de maqueta.
+<br>
+-Cuidar aspectos de diseño.
+<br>
+-Contraste texto/fondo.
+<br>
+-Responsividad.
+</p>
+
 
 
 

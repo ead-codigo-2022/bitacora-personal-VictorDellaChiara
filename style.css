@@ -102,7 +102,7 @@ form .form-control {
 /* HeaderPrincipal */
 #mainheader {
 	background: radial-gradient(at 10% 10px, #010688ad,#a4a4bb, #fff);
-	height: 120vh;
+	height: 130vh;
 }
 
 /* Navbar */
@@ -119,8 +119,8 @@ form .form-control {
 
 #navbar .logo {
 	float: left;
-	padding-top: 16px;
-	font-size: 35px;
+	padding-top: 15px;
+	font-size: 31px;
 }
 
 #navbar ul {
@@ -341,5 +341,29 @@ form .form-control {
     .contenedor-imagenes .imagen{
         width: 80%;
     }
+
 }
 
+.btn {
+	display: inline-block;
+	font-size: 15px;
+	padding: 12px 23px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	border-radius: 4px;
+}
+
+.btn-round1 {
+	border-radius: 20px;
+}
+
+.btn-dark1 {
+	background: #1b1981;
+	border: 1px solid #1b1981;
+	color: #fff;
+}
+
+.btn-dark:hover {
+	background: #1b1981;
+	color: #fff;
+}
