@@ -551,3 +551,30 @@ footer {
    }
     
 }
+.galeria{
+	margin: 10px 20px;
+	box-shadow: 0 4px 8px lightskyblue , 0 6px 20px rgba(0, 0, 0, .19);
+	float: left;
+	width: 350px;
+}
+
+div.galeria img{
+	width: 100%;
+	height:auto;
+}
+
+div.galeria:hover {
+border: 1px solid grey;
+transform: rotate(-3deg);
+
+}
+
+div.foto{
+	text-align: center;
+	text-shadow: 2px 2px 5px blue;
+	padding: 10px;
+}
+
+.Titulo-gal h1{
+	text-align: center;
+}
